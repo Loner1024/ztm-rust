@@ -8,4 +8,15 @@
 // * Use a function to display the result
 // * Use the "{:?}" token in the println macro to display the result
 
-fn main() {}
+fn main() {
+    let s = sum(1,2);
+    show(s);
+}
+
+fn show(a:isize) {
+    println!("{:?}",a)
+}
+
+fn sum(a: isize, b: isize) -> isize {
+    a + b
+}
